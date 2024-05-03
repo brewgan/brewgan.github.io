@@ -15,6 +15,13 @@ header {
 
 nav {
   text-align: center;
+  position: fixed; /* Membuat navbar tetap pada posisi saat di scroll */
+  width: 100%; /* Menetapkan lebar navbar agar sesuai dengan lebar layar */
+  top: 0; /* Menempatkan navbar di bagian atas layar */
+  background-color: #ffffff; /* Menambahkan warna latar belakang agar teks dapat terbaca dengan jelas */
+  z-index: 1000; /* Memastikan navbar selalu di atas elemen lain */
+  padding-left: 3px;
+  padding-top: 3px;
 }
 
 nav ul {
@@ -25,7 +32,12 @@ nav ul {
   justify-content: flex-end; /* Menyelaraskan item ke kanan */
   list-style: none;
   padding: 0;
+  margin: 0; /* Menghilangkan margin default */
   color: #d7c8c8; /* Mengubah warna font menjadi putih */
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 70px;
+  padding-bottom: 10px;
 }
 
 nav li {
@@ -115,6 +127,8 @@ section {
 }
 
 .tugas img {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   width: 100px;
   background-size: contain;
   border-radius: 30px;
@@ -131,19 +145,28 @@ section {
 }
 
 .tugas img:hover {
-  transform: scale(1.2); /* Membuat gambar menjadi lebih besar ketika cursor mengarah ke gambar */
+  transform: scale(
+    1.2
+  ); /* Membuat gambar menjadi lebih besar ketika cursor mengarah ke gambar */
 }
 .contact {
-
-  background-color: #ffffff;
+  background-color: #c7afaf;
   background-size: contain;
   border-radius: 10px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  font-weight: bold;
 }
 
 .contact img {
   width: 50px;
+}
+
+.contact img:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
 }
 
 h2 {
