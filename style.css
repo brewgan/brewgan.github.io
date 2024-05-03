@@ -103,8 +103,39 @@ section {
   background-size: auto; /* Menyesuaikan ukuran background agar sesuai dengan kontainer */
 }
 
-.contact {
+.tugas {
+  width: 300px;
+  margin: 0 auto; /* Menambahkan margin auto untuk mengatur posisi ke tengah */
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #c7afaf;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.tugas img {
+  width: 100px;
+  background-size: contain;
+  border-radius: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 0 #ffffff;
+  background-position: center; /* Mengubah posisi background ke tengah */
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  transition: transform 0.3s ease-in-out; /* Menambahkan transisi untuk efek zoom */
+  display: block; /* Menjadikan gambar sebagai block untuk memudahkan penyesuaian */
+  margin: 0 auto; /* Menambahkan margin auto untuk mengatur posisi gambar ke tengah */
+}
+
+.tugas img:hover {
+  transform: scale(1.2); /* Membuat gambar menjadi lebih besar ketika cursor mengarah ke gambar */
+}
+.contact {
+
+  background-color: #ffffff;
   background-size: contain;
   border-radius: 10px;
   padding-top: 80px;
